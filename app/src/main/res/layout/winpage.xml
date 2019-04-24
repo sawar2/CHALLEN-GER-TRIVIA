@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/winnerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player # wins"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="203dp" />
+
+    <TextView
+        android:id="@+id/player1PointsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 1 Points"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="299dp" />
+
+    <TextView
+        android:id="@+id/player2PointsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 2 Points"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="344dp" />
+
+    <Button
+        android:id="@+id/restartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restart"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="517dp" />
+
+</android.support.constraint.ConstraintLayout>

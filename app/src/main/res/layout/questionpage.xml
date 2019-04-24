@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="232dp"
+        android:layout_height="132dp"
+        android:text="Question"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="116dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="330dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="418dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="508dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="601dp" />
+
+    <TextView
+        android:id="@+id/playernumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player #"
+        tools:layout_editor_absoluteX="336dp"
+        tools:layout_editor_absoluteY="16dp" />
+</android.support.constraint.ConstraintLayout>
