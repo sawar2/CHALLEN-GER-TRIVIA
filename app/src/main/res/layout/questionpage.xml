@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/questionLabel"
         android:layout_width="232dp"
         android:layout_height="132dp"
         android:text="Question"
@@ -14,7 +14,7 @@
         tools:layout_editor_absoluteY="116dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/questionAButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
@@ -22,7 +22,7 @@
         tools:layout_editor_absoluteY="330dp" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/questionBButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
@@ -30,7 +30,7 @@
         tools:layout_editor_absoluteY="418dp" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/questionCButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
@@ -38,7 +38,7 @@
         tools:layout_editor_absoluteY="508dp" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/questionDButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
@@ -46,7 +46,7 @@
         tools:layout_editor_absoluteY="601dp" />
 
     <TextView
-        android:id="@+id/playernumber"
+        android:id="@+id/playerNumberLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Player #"

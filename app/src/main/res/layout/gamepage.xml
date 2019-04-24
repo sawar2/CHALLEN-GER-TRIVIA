@@ -31,7 +31,7 @@
         tools:layout_editor_absoluteY="16dp" />
 
     <TextView
-        android:id="@+id/phrase"
+        android:id="@+id/phraseLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="phrase"
@@ -148,7 +148,7 @@
         android:layout_height="33dp"
         android:text="A"
         tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="399dp" />
+        tools:layout_editor_absoluteY="460dp" />
 
     <Button
         android:id="@+id/letterJ"
