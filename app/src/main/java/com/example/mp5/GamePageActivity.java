@@ -80,6 +80,7 @@ public class GamePageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gamepage);
+        generateRandomPhrase();
         //onfigureLettersButton();
     }
 
@@ -89,8 +90,13 @@ public class GamePageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 char guessedChar = 'a';
-                char[] correctArray = random
-
+                char[] correctArray = randomPhrase.toCharArray():
+                char[] guessArray = hiddenPhrase.toCharArray();
+                for (int i = 0; i < correctArray.length; i++) {
+                    if (guessedChar == correctArray[i]) {
+                        guessArray[i] = correctArray[i];
+                }
+                String newHiddenPhrase = guessArray.toString():
             }
         });
     }*/
