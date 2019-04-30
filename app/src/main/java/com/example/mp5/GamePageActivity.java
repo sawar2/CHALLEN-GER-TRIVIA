@@ -89,7 +89,7 @@ public class GamePageActivity extends AppCompatActivity {
     }
 
     public void configureLetterButtons() {
-        Button letterAButton = (Button) findViewById(R.id.letterA);
+        final Button letterAButton = (Button) findViewById(R.id.letterA);
         letterAButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -104,6 +104,7 @@ public class GamePageActivity extends AppCompatActivity {
                 String newHiddenPhrase = new String(guessArray);
                 TextView setPhraseLabelAfterClick = (TextView) findViewById(R.id.phraseLabel);
                 setPhraseLabelAfterClick.setText(newHiddenPhrase);
+                letterAButton.setVisibility(View.GONE);
             }
         });
     }
