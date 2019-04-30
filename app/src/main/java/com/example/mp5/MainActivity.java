@@ -83,10 +83,16 @@ public class MainActivity extends AppCompatActivity {
         questionDOptions[8] = "Searching through a graph";
         questionDOptions[9] = "Recursively searching a tree";
 
+
+        String questionLabel = randomQuestions[rng];
         String questionAPhrase = questionAOptions[rng];
         String questionBPhrase = questionBOptions[rng];
         String questionCPhrase = questionCOptions[rng];
         String questionDPhrase = questionDOptions[rng];
+
+
+        TextView setQuestionLabel = (TextView) findViewById(R.id.questionLabel);
+        setQuestionLabel.setText(questionLabel);
 
         TextView setQuestionA = (TextView) findViewById(R.id.questionAButton);
         setQuestionA.setText(questionAPhrase);
