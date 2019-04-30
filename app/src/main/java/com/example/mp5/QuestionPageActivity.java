@@ -1,11 +1,14 @@
 package com.example.mp5;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class QuestionPageActivity extends AppCompatActivity {
-
+    public boolean isPlayer1 = true;
     private int player1Points = 0;
     private int player2Points = 0;
 
@@ -161,6 +164,52 @@ public class QuestionPageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.questionpage);
 
-        generateRandomQuestion();
+        configureQuestionButtons();
+    }
+
+    public void configureQuestionButtons() {
+        Button questionAButton = (Button) findViewById(R.id.questionAButton);
+        questionAButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(QuestionPageActivity.this, GamePageActivity.class));
+            }
+        });
+
+        Button questionBButton = (Button) findViewById(R.id.questionBButton);
+        questionBButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (isPlayer1) {
+                    isPlayer1 = false;
+                } else {
+                    isPlayer1 = true;
+                }
+            }
+        });
+
+        Button questionCButton = (Button) findViewById(R.id.questionCButton);
+        questionCButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (isPlayer1) {
+                    isPlayer1 = false;
+                } else {
+                    isPlayer1 = true;
+                }
+            }
+        });
+
+        Button questionDButton = (Button) findViewById(R.id.questionDButton);
+        questionDButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (isPlayer1) {
+                    isPlayer1 = false;
+                } else {
+                    isPlayer1 = true;
+                }
+            }
+        });
     }
 }
