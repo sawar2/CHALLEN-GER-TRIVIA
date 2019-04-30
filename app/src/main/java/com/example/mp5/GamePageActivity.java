@@ -11,6 +11,8 @@ public class GamePageActivity extends AppCompatActivity {
 
     private int player1Points = 0;
     private int player2Points = 0;
+    private String correctPhraseLabel;
+    private String getPhraseLabel;
 
     //Random Number Generator
     public int getRandomNumber() {
@@ -68,6 +70,8 @@ public class GamePageActivity extends AppCompatActivity {
         hiddenPhrases[9] = "______";
 
         String phraseLabel = hiddenPhrases[rng];
+        getPhraseLabel = phraseLabel;
+        correctPhraseLabel = randomPhrases[rng];
 
         TextView setPhraseLabel = (TextView) findViewById(R.id.phraseLabel);
         setPhraseLabel.setText(phraseLabel);
@@ -81,23 +85,26 @@ public class GamePageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gamepage);
         generateRandomPhrase();
-        //onfigureLettersButton();
+        configureLetterButtons();
     }
 
-    /*public void configureLetterButtons() {
+    public void configureLetterButtons() {
         Button letterAButton = (Button) findViewById(R.id.letterA);
         letterAButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 char guessedChar = 'a';
-                char[] correctArray = randomPhrase.toCharArray():
-                char[] guessArray = hiddenPhrase.toCharArray();
+                char[] correctArray = correctPhraseLabel.toCharArray();
+                char[] guessArray = getPhraseLabel.toCharArray();
                 for (int i = 0; i < correctArray.length; i++) {
                     if (guessedChar == correctArray[i]) {
                         guessArray[i] = correctArray[i];
+                    }
                 }
-                String newHiddenPhrase = guessArray.toString():
+                String newHiddenPhrase = new String(guessArray);
+                TextView setPhraseLabelAfterClick = (TextView) findViewById(R.id.phraseLabel);
+                setPhraseLabelAfterClick.setText(newHiddenPhrase);
             }
         });
-    }*/
+    }
 }
