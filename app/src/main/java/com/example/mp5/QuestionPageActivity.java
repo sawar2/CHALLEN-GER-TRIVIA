@@ -2,6 +2,7 @@ package com.example.mp5;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.TextView;
 
 public class QuestionPageActivity extends AppCompatActivity {
 
@@ -130,6 +131,28 @@ public class QuestionPageActivity extends AppCompatActivity {
         questionDOptions[7] = "QuickSort";
         questionDOptions[8] = "Searching through a graph";
         questionDOptions[9] = "Recursively searching a tree";
+
+        String questionLabel = randomQuestions[rng];
+        String questionAPhrase = questionAOptions[rng];
+        String questionBPhrase = questionBOptions[rng];
+        String questionCPhrase = questionCOptions[rng];
+        String questionDPhrase = questionDOptions[rng];
+
+
+        TextView setQuestionLabel = (TextView) findViewById(R.id.questionLabel);
+        setQuestionLabel.setText(questionLabel);
+
+        TextView setQuestionA = (TextView) findViewById(R.id.questionAButton);
+        setQuestionA.setText(questionAPhrase);
+
+        TextView setQuestionB = (TextView) findViewById(R.id.questionBButton);
+        setQuestionB.setText(questionBPhrase);
+
+        TextView setQuestionC = (TextView) findViewById(R.id.questionCButton);
+        setQuestionC.setText(questionCPhrase);
+
+        TextView setQuestionD = (TextView) findViewById(R.id.questionDButton);
+        setQuestionD.setText(questionDPhrase);
 
     }
 
