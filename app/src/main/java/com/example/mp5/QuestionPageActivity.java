@@ -158,6 +158,7 @@ public class QuestionPageActivity extends MainActivity {
         questionAButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                rightSound = (MediaPlayer) MediaPlayer.create(this, R.raw.right);
                 rightSound.start();
                 startActivity(new Intent(QuestionPageActivity.this, GamePageActivity.class));
             }
@@ -172,6 +173,7 @@ public class QuestionPageActivity extends MainActivity {
                 } else {
                     setPlayer1(true);
                 }
+                wrongSound = (MediaPlayer) MediaPlayer.create(this, R.raw.wrong);
                 wrongSound.start();
                 startActivity(new Intent(QuestionPageActivity.this, QuestionPageActivity.class));
             }
@@ -186,6 +188,7 @@ public class QuestionPageActivity extends MainActivity {
                 } else {
                     setPlayer1(true);
                 }
+                wrongSound = (MediaPlayer) MediaPlayer.create(this, R.raw.wrong);
                 wrongSound.start();
                 startActivity(new Intent(QuestionPageActivity.this, QuestionPageActivity.class));
             }
@@ -200,6 +203,7 @@ public class QuestionPageActivity extends MainActivity {
                 } else {
                     setPlayer1(true);
                 }
+                wrongSound = (MediaPlayer) MediaPlayer.create(this, R.raw.wrong);
                 wrongSound.start();
                 startActivity(new Intent(QuestionPageActivity.this, QuestionPageActivity.class));
             }
