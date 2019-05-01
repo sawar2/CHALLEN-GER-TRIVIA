@@ -168,5 +168,474 @@ public class GamePageActivity extends AppCompatActivity {
                 }
             }
         });
+
+
+        final Button letterCButton = (Button) findViewById(R.id.letterC);
+        letterCButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                char guessedChar = 'c';
+                char[] correctArray = correctPhraseLabel.toCharArray();
+                char[] guessArray = getPhraseLabel.toCharArray();
+                char[] currentArray = new char[guessArray.length];
+                currentArray = Arrays.copyOf(guessArray, guessArray.length);
+                for (int i = 0; i < correctArray.length; i++) {
+                    if (guessedChar == correctArray[i]) {
+                        guessArray[i] = correctArray[i];
+                    }
+                }
+                String newHiddenPhrase = new String(guessArray);
+                TextView setPhraseLabelAfterClick = (TextView) findViewById(R.id.phraseLabel);
+                setPhraseLabelAfterClick.setText(newHiddenPhrase);
+                letterCButton.setVisibility(View.GONE);
+                if (Arrays.equals(guessArray, currentArray)) {
+                    if (isPlayer1) {
+                        isPlayer1 = false;
+                    } else {
+                        isPlayer1 = true;
+                    }
+                    startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
+                } else {
+                    if (isPlayer1) {
+                        player1Points++;
+
+                    } else {
+                        player2Points++;
+                    }
+                }
+            }
+        });
+
+        final Button letterDButton = (Button) findViewById(R.id.letterD);
+        letterDButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                char guessedChar = 'd';
+                char[] correctArray = correctPhraseLabel.toCharArray();
+                char[] guessArray = getPhraseLabel.toCharArray();
+                char[] currentArray = new char[guessArray.length];
+                currentArray = Arrays.copyOf(guessArray, guessArray.length);
+                for (int i = 0; i < correctArray.length; i++) {
+                    if (guessedChar == correctArray[i]) {
+                        guessArray[i] = correctArray[i];
+                    }
+                }
+                String newHiddenPhrase = new String(guessArray);
+                TextView setPhraseLabelAfterClick = (TextView) findViewById(R.id.phraseLabel);
+                setPhraseLabelAfterClick.setText(newHiddenPhrase);
+                letterDButton.setVisibility(View.GONE);
+                if (Arrays.equals(guessArray, currentArray)) {
+                    if (isPlayer1) {
+                        isPlayer1 = false;
+                    } else {
+                        isPlayer1 = true;
+                    }
+                    startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
+                } else {
+                    if (isPlayer1) {
+                        player1Points++;
+
+                    } else {
+                        player2Points++;
+                    }
+                }
+            }
+        });
+
+        final Button letterEButton = (Button) findViewById(R.id.letterE);
+        letterEButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                char guessedChar = 'e';
+                char[] correctArray = correctPhraseLabel.toCharArray();
+                char[] guessArray = getPhraseLabel.toCharArray();
+                char[] currentArray = new char[guessArray.length];
+                currentArray = Arrays.copyOf(guessArray, guessArray.length);
+                for (int i = 0; i < correctArray.length; i++) {
+                    if (guessedChar == correctArray[i]) {
+                        guessArray[i] = correctArray[i];
+                    }
+                }
+                String newHiddenPhrase = new String(guessArray);
+                TextView setPhraseLabelAfterClick = (TextView) findViewById(R.id.phraseLabel);
+                setPhraseLabelAfterClick.setText(newHiddenPhrase);
+                letterEButton.setVisibility(View.GONE);
+                if (Arrays.equals(guessArray, currentArray)) {
+                    if (isPlayer1) {
+                        isPlayer1 = false;
+                    } else {
+                        isPlayer1 = true;
+                    }
+                    startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
+                } else {
+                    if (isPlayer1) {
+                        player1Points++;
+
+                    } else {
+                        player2Points++;
+                    }
+                }
+            }
+        });
+
+        final Button letterFButton = (Button) findViewById(R.id.letterF);
+        letterFButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                char guessedChar = 'f';
+                char[] correctArray = correctPhraseLabel.toCharArray();
+                char[] guessArray = getPhraseLabel.toCharArray();
+                char[] currentArray = new char[guessArray.length];
+                currentArray = Arrays.copyOf(guessArray, guessArray.length);
+                for (int i = 0; i < correctArray.length; i++) {
+                    if (guessedChar == correctArray[i]) {
+                        guessArray[i] = correctArray[i];
+                    }
+                }
+                String newHiddenPhrase = new String(guessArray);
+                TextView setPhraseLabelAfterClick = (TextView) findViewById(R.id.phraseLabel);
+                setPhraseLabelAfterClick.setText(newHiddenPhrase);
+                letterFButton.setVisibility(View.GONE);
+                if (Arrays.equals(guessArray, currentArray)) {
+                    if (isPlayer1) {
+                        isPlayer1 = false;
+                    } else {
+                        isPlayer1 = true;
+                    }
+                    startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
+                } else {
+                    if (isPlayer1) {
+                        player1Points++;
+
+                    } else {
+                        player2Points++;
+                    }
+                }
+            }
+        });
+
+        final Button letterGButton = (Button) findViewById(R.id.letterG);
+        letterGButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                char guessedChar = 'g';
+                char[] correctArray = correctPhraseLabel.toCharArray();
+                char[] guessArray = getPhraseLabel.toCharArray();
+                char[] currentArray = new char[guessArray.length];
+                currentArray = Arrays.copyOf(guessArray, guessArray.length);
+                for (int i = 0; i < correctArray.length; i++) {
+                    if (guessedChar == correctArray[i]) {
+                        guessArray[i] = correctArray[i];
+                    }
+                }
+                String newHiddenPhrase = new String(guessArray);
+                TextView setPhraseLabelAfterClick = (TextView) findViewById(R.id.phraseLabel);
+                setPhraseLabelAfterClick.setText(newHiddenPhrase);
+                letterGButton.setVisibility(View.GONE);
+                if (Arrays.equals(guessArray, currentArray)) {
+                    if (isPlayer1) {
+                        isPlayer1 = false;
+                    } else {
+                        isPlayer1 = true;
+                    }
+                    startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
+                } else {
+                    if (isPlayer1) {
+                        player1Points++;
+
+                    } else {
+                        player2Points++;
+                    }
+                }
+            }
+        });
+
+        final Button letterHButton = (Button) findViewById(R.id.letterH);
+        letterHButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                char guessedChar = 'h';
+                char[] correctArray = correctPhraseLabel.toCharArray();
+                char[] guessArray = getPhraseLabel.toCharArray();
+                char[] currentArray = new char[guessArray.length];
+                currentArray = Arrays.copyOf(guessArray, guessArray.length);
+                for (int i = 0; i < correctArray.length; i++) {
+                    if (guessedChar == correctArray[i]) {
+                        guessArray[i] = correctArray[i];
+                    }
+                }
+                String newHiddenPhrase = new String(guessArray);
+                TextView setPhraseLabelAfterClick = (TextView) findViewById(R.id.phraseLabel);
+                setPhraseLabelAfterClick.setText(newHiddenPhrase);
+                letterHButton.setVisibility(View.GONE);
+                if (Arrays.equals(guessArray, currentArray)) {
+                    if (isPlayer1) {
+                        isPlayer1 = false;
+                    } else {
+                        isPlayer1 = true;
+                    }
+                    startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
+                } else {
+                    if (isPlayer1) {
+                        player1Points++;
+
+                    } else {
+                        player2Points++;
+                    }
+                }
+            }
+        });
+
+        final Button letterIButton = (Button) findViewById(R.id.letterI);
+        letterIButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                char guessedChar = 'i';
+                char[] correctArray = correctPhraseLabel.toCharArray();
+                char[] guessArray = getPhraseLabel.toCharArray();
+                char[] currentArray = new char[guessArray.length];
+                currentArray = Arrays.copyOf(guessArray, guessArray.length);
+                for (int i = 0; i < correctArray.length; i++) {
+                    if (guessedChar == correctArray[i]) {
+                        guessArray[i] = correctArray[i];
+                    }
+                }
+                String newHiddenPhrase = new String(guessArray);
+                TextView setPhraseLabelAfterClick = (TextView) findViewById(R.id.phraseLabel);
+                setPhraseLabelAfterClick.setText(newHiddenPhrase);
+                letterIButton.setVisibility(View.GONE);
+                if (Arrays.equals(guessArray, currentArray)) {
+                    if (isPlayer1) {
+                        isPlayer1 = false;
+                    } else {
+                        isPlayer1 = true;
+                    }
+                    startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
+                } else {
+                    if (isPlayer1) {
+                        player1Points++;
+
+                    } else {
+                        player2Points++;
+                    }
+                }
+            }
+        });
+
+        final Button letterJButton = (Button) findViewById(R.id.letterJ);
+        letterJButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                char guessedChar = 'j';
+                char[] correctArray = correctPhraseLabel.toCharArray();
+                char[] guessArray = getPhraseLabel.toCharArray();
+                char[] currentArray = new char[guessArray.length];
+                currentArray = Arrays.copyOf(guessArray, guessArray.length);
+                for (int i = 0; i < correctArray.length; i++) {
+                    if (guessedChar == correctArray[i]) {
+                        guessArray[i] = correctArray[i];
+                    }
+                }
+                String newHiddenPhrase = new String(guessArray);
+                TextView setPhraseLabelAfterClick = (TextView) findViewById(R.id.phraseLabel);
+                setPhraseLabelAfterClick.setText(newHiddenPhrase);
+                letterJButton.setVisibility(View.GONE);
+                if (Arrays.equals(guessArray, currentArray)) {
+                    if (isPlayer1) {
+                        isPlayer1 = false;
+                    } else {
+                        isPlayer1 = true;
+                    }
+                    startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
+                } else {
+                    if (isPlayer1) {
+                        player1Points++;
+
+                    } else {
+                        player2Points++;
+                    }
+                }
+            }
+        });
+
+        final Button letterKButton = (Button) findViewById(R.id.letterK);
+        letterKButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                char guessedChar = 'k';
+                char[] correctArray = correctPhraseLabel.toCharArray();
+                char[] guessArray = getPhraseLabel.toCharArray();
+                char[] currentArray = new char[guessArray.length];
+                currentArray = Arrays.copyOf(guessArray, guessArray.length);
+                for (int i = 0; i < correctArray.length; i++) {
+                    if (guessedChar == correctArray[i]) {
+                        guessArray[i] = correctArray[i];
+                    }
+                }
+                String newHiddenPhrase = new String(guessArray);
+                TextView setPhraseLabelAfterClick = (TextView) findViewById(R.id.phraseLabel);
+                setPhraseLabelAfterClick.setText(newHiddenPhrase);
+                letterKButton.setVisibility(View.GONE);
+                if (Arrays.equals(guessArray, currentArray)) {
+                    if (isPlayer1) {
+                        isPlayer1 = false;
+                    } else {
+                        isPlayer1 = true;
+                    }
+                    startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
+                } else {
+                    if (isPlayer1) {
+                        player1Points++;
+
+                    } else {
+                        player2Points++;
+                    }
+                }
+            }
+        });
+
+        final Button letterLButton = (Button) findViewById(R.id.letterL);
+        letterLButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                char guessedChar = 'l';
+                char[] correctArray = correctPhraseLabel.toCharArray();
+                char[] guessArray = getPhraseLabel.toCharArray();
+                char[] currentArray = new char[guessArray.length];
+                currentArray = Arrays.copyOf(guessArray, guessArray.length);
+                for (int i = 0; i < correctArray.length; i++) {
+                    if (guessedChar == correctArray[i]) {
+                        guessArray[i] = correctArray[i];
+                    }
+                }
+                String newHiddenPhrase = new String(guessArray);
+                TextView setPhraseLabelAfterClick = (TextView) findViewById(R.id.phraseLabel);
+                setPhraseLabelAfterClick.setText(newHiddenPhrase);
+                letterLButton.setVisibility(View.GONE);
+                if (Arrays.equals(guessArray, currentArray)) {
+                    if (isPlayer1) {
+                        isPlayer1 = false;
+                    } else {
+                        isPlayer1 = true;
+                    }
+                    startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
+                } else {
+                    if (isPlayer1) {
+                        player1Points++;
+
+                    } else {
+                        player2Points++;
+                    }
+                }
+            }
+        });
+
+        final Button letterMButton = (Button) findViewById(R.id.letterM);
+        letterMButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                char guessedChar = 'm';
+                char[] correctArray = correctPhraseLabel.toCharArray();
+                char[] guessArray = getPhraseLabel.toCharArray();
+                char[] currentArray = new char[guessArray.length];
+                currentArray = Arrays.copyOf(guessArray, guessArray.length);
+                for (int i = 0; i < correctArray.length; i++) {
+                    if (guessedChar == correctArray[i]) {
+                        guessArray[i] = correctArray[i];
+                    }
+                }
+                String newHiddenPhrase = new String(guessArray);
+                TextView setPhraseLabelAfterClick = (TextView) findViewById(R.id.phraseLabel);
+                setPhraseLabelAfterClick.setText(newHiddenPhrase);
+                letterMButton.setVisibility(View.GONE);
+                if (Arrays.equals(guessArray, currentArray)) {
+                    if (isPlayer1) {
+                        isPlayer1 = false;
+                    } else {
+                        isPlayer1 = true;
+                    }
+                    startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
+                } else {
+                    if (isPlayer1) {
+                        player1Points++;
+
+                    } else {
+                        player2Points++;
+                    }
+                }
+            }
+        });
+
+        final Button letterNButton = (Button) findViewById(R.id.letterN);
+        letterNButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                char guessedChar = 'n';
+                char[] correctArray = correctPhraseLabel.toCharArray();
+                char[] guessArray = getPhraseLabel.toCharArray();
+                char[] currentArray = new char[guessArray.length];
+                currentArray = Arrays.copyOf(guessArray, guessArray.length);
+                for (int i = 0; i < correctArray.length; i++) {
+                    if (guessedChar == correctArray[i]) {
+                        guessArray[i] = correctArray[i];
+                    }
+                }
+                String newHiddenPhrase = new String(guessArray);
+                TextView setPhraseLabelAfterClick = (TextView) findViewById(R.id.phraseLabel);
+                setPhraseLabelAfterClick.setText(newHiddenPhrase);
+                letterNButton.setVisibility(View.GONE);
+                if (Arrays.equals(guessArray, currentArray)) {
+                    if (isPlayer1) {
+                        isPlayer1 = false;
+                    } else {
+                        isPlayer1 = true;
+                    }
+                    startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
+                } else {
+                    if (isPlayer1) {
+                        player1Points++;
+
+                    } else {
+                        player2Points++;
+                    }
+                }
+            }
+        });
+
+        final Button letterOButton = (Button) findViewById(R.id.letterO);
+        letterOButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                char guessedChar = 'o';
+                char[] correctArray = correctPhraseLabel.toCharArray();
+                char[] guessArray = getPhraseLabel.toCharArray();
+                char[] currentArray = new char[guessArray.length];
+                currentArray = Arrays.copyOf(guessArray, guessArray.length);
+                for (int i = 0; i < correctArray.length; i++) {
+                    if (guessedChar == correctArray[i]) {
+                        guessArray[i] = correctArray[i];
+                    }
+                }
+                String newHiddenPhrase = new String(guessArray);
+                TextView setPhraseLabelAfterClick = (TextView) findViewById(R.id.phraseLabel);
+                setPhraseLabelAfterClick.setText(newHiddenPhrase);
+                letterOButton.setVisibility(View.GONE);
+                if (Arrays.equals(guessArray, currentArray)) {
+                    if (isPlayer1) {
+                        isPlayer1 = false;
+                    } else {
+                        isPlayer1 = true;
+                    }
+                    startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
+                } else {
+                    if (isPlayer1) {
+                        player1Points++;
+
+                    } else {
+                        player2Points++;
+                    }
+                }
+            }
+        });
     }
 }
