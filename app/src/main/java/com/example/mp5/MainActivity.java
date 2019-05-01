@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends WinPageActivity {
+public class MainActivity extends AppCompatActivity {
 
     private boolean isPlayer1 = true;
     public boolean getPlayer1() {
