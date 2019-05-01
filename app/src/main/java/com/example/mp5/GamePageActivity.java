@@ -1,6 +1,7 @@
 package com.example.mp5;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -107,6 +108,8 @@ public class GamePageActivity extends MainActivity {
 
     public void configureLetterButtons() {
         final Button letterAButton = (Button) findViewById(R.id.letterA);
+        final MediaPlayer wrong = MediaPlayer.create(this, R.raw.wrong);
+        final MediaPlayer right = MediaPlayer.create(this, R.raw.right);
         letterAButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -123,6 +126,7 @@ public class GamePageActivity extends MainActivity {
                 setPhraseLabelAfterClick.setText(newHiddenPhrase);
                 letterAButton.setVisibility(View.GONE);
                 if (Arrays.equals(guessArray, currentArray)) {
+                    wrong.start();
                     if (getPlayer1()) {
                         setPlayer1(false);
                     } else {
@@ -131,6 +135,7 @@ public class GamePageActivity extends MainActivity {
 
                     startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
                 } else {
+                    right.start();
                     if (getPlayer1()) {
                         player1Points++;
 
