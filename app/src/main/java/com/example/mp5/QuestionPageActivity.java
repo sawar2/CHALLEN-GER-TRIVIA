@@ -155,18 +155,21 @@ public class QuestionPageActivity extends MainActivity {
 
     public void configureQuestionButtons() {
         Button questionAButton = (Button) findViewById(R.id.questionAButton);
+        final MediaPlayer right = MediaPlayer.create(this, R.raw.right);
         questionAButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                right.start();
                 startActivity(new Intent(QuestionPageActivity.this, GamePageActivity.class));
             }
         });
 
         Button questionBButton = (Button) findViewById(R.id.questionBButton);
+        final MediaPlayer wrong = MediaPlayer.create(this, R.raw.wrong);
         questionBButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                wrong.start();
                 if (getPlayer1()) {
                     setPlayer1(false);
                 } else {
@@ -181,6 +184,7 @@ public class QuestionPageActivity extends MainActivity {
         questionCButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                wrong.start();
                 if (getPlayer1()) {
                     setPlayer1(false);
                 } else {
@@ -195,6 +199,7 @@ public class QuestionPageActivity extends MainActivity {
         questionDButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                wrong.start();
                 if (getPlayer1()) {
                     setPlayer1(false);
                 } else {
