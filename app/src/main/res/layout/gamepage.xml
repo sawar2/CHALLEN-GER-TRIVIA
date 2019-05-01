@@ -15,6 +15,7 @@
         android:background="#03A9F4"
         android:clickable="true"
         android:text="A"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_conversion_absoluteHeight="33dp"
@@ -31,6 +32,7 @@
         android:clickable="true"
         android:minWidth="1dp"
         android:text="C"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_conversion_absoluteHeight="31dp"
@@ -46,6 +48,7 @@
         android:background="#03A9F4"
         android:clickable="true"
         android:text="D"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_conversion_absoluteHeight="33dp"
@@ -61,6 +64,7 @@
         android:background="#03A9F4"
         android:clickable="true"
         android:text="B"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_conversion_absoluteHeight="33dp"
@@ -76,6 +80,7 @@
         android:background="#03A9F4"
         android:clickable="true"
         android:text="E"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_conversion_absoluteHeight="33dp"
@@ -91,6 +96,7 @@
         android:background="#03A9F4"
         android:clickable="true"
         android:text="F"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -104,6 +110,7 @@
         android:background="#03A9F4"
         android:clickable="true"
         android:text="G"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -117,6 +124,7 @@
         android:background="#03A9F4"
         android:clickable="true"
         android:text="H"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -130,6 +138,7 @@
         android:background="#03A9F4"
         android:clickable="true"
         android:text="I"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -143,6 +152,7 @@
         android:background="#03A9F4"
         android:clickable="true"
         android:text="J"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -156,6 +166,7 @@
         android:background="#03A9F4"
         android:clickable="true"
         android:text="K"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -169,6 +180,7 @@
         android:background="#03A9F4"
         android:clickable="true"
         android:text="L"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -183,6 +195,7 @@
         android:clickable="true"
         android:minWidth="20dip"
         android:text="M"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -196,6 +209,7 @@
         android:background="#03A9F4"
         android:clickable="true"
         android:text="N"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -209,6 +223,7 @@
         android:background="#03A9F4"
         android:clickable="true"
         android:text="O"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -222,6 +237,7 @@
         android:background="#03A9F4"
         android:clickable="true"
         android:text="P"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -235,6 +251,7 @@
         android:background="#03A9F4"
         android:clickable="true"
         android:text="Q"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -248,6 +265,7 @@
         android:background="#03A9F4"
         android:clickable="true"
         android:text="R"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -261,6 +279,7 @@
         android:background="#03A9F4"
         android:clickable="true"
         android:text="S"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -274,6 +293,7 @@
         android:background="#03A9F4"
         android:clickable="true"
         android:text="T"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -287,6 +307,7 @@
         android:background="#03A9F4"
         android:clickable="true"
         android:text="U"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -300,6 +321,7 @@
         android:background="#03A9F4"
         android:clickable="true"
         android:text="V"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -313,6 +335,7 @@
         android:background="#03A9F4"
         android:clickable="true"
         android:text="W"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -326,6 +349,7 @@
         android:background="#03A9F4"
         android:clickable="true"
         android:text="X"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -339,6 +363,7 @@
         android:background="#03A9F4"
         android:clickable="true"
         android:text="Y"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -352,6 +377,7 @@
         android:background="#03A9F4"
         android:clickable="true"
         android:text="Z"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -376,8 +402,10 @@
         android:layout_marginTop="180dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:background="#FFEB3B"
         android:gravity="center|center_horizontal|center_vertical"
         android:text="phrase"
+        android:textColor="#800505"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
