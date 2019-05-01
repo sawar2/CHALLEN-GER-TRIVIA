@@ -63,16 +63,16 @@ public class GamePageActivity extends AppCompatActivity {
 
         String[] hiddenPhrases = new String[10];
 
-        hiddenPhrases[0] = "_______";
-        hiddenPhrases[1] = "_________";
-        hiddenPhrases[2] = "_________";
-        hiddenPhrases[3] = "__________";
-        hiddenPhrases[4] = "_______";
-        hiddenPhrases[5] = "_______";
-        hiddenPhrases[6] = "____";
-        hiddenPhrases[7] = "_______";
-        hiddenPhrases[8] = "______";
-        hiddenPhrases[9] = "______";
+        hiddenPhrases[0] = "_________";
+        hiddenPhrases[1] = "___________";
+        hiddenPhrases[2] = "___________";
+        hiddenPhrases[3] = "____________";
+        hiddenPhrases[4] = "_________";
+        hiddenPhrases[5] = "_________";
+        hiddenPhrases[6] = "______";
+        hiddenPhrases[7] = "_________";
+        hiddenPhrases[8] = "________";
+        hiddenPhrases[9] = "________";
 
         String phraseLabel = hiddenPhrases[rng];
         getPhraseLabel = phraseLabel;
