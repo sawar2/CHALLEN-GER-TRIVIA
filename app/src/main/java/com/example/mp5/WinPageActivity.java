@@ -25,7 +25,7 @@ public class WinPageActivity extends GamePageActivity {
             TextView setWinnerLabel = (TextView) findViewById(R.id.winnerLabel);
             setWinnerLabel.setText(winnerLabel);
         } else {
-            winnerLabel = "It's a Tie";
+            winnerLabel = "You Win!";
             TextView setWinnerLabel = (TextView) findViewById(R.id.winnerLabel);
             setWinnerLabel.setText(winnerLabel);
         }

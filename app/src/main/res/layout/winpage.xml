@@ -30,6 +30,7 @@
         android:layout_marginEnd="284dp"
         android:layout_marginRight="284dp"
         android:text="Player 1 Points"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -44,6 +45,7 @@
         android:layout_marginEnd="284dp"
         android:layout_marginRight="284dp"
         android:text="Player 2 Points"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
