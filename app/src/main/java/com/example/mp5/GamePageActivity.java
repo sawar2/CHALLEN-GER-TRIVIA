@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import java.util.Arrays;
 
-public class GamePageActivity extends AppCompatActivity {
+public class GamePageActivity extends MainActivity {
 
     public boolean gameHasNotStarted = true;
     public Integer player1Points = 0;
@@ -17,7 +17,6 @@ public class GamePageActivity extends AppCompatActivity {
     private String getPhraseLabel;
     private char[] correctArray;
     private char[] guessArray;
-    public boolean isPlayer1 = true;
 
     //Random Number Generator
     public int getRandomNumber() {
@@ -124,16 +123,15 @@ public class GamePageActivity extends AppCompatActivity {
                 setPhraseLabelAfterClick.setText(newHiddenPhrase);
                 letterAButton.setVisibility(View.GONE);
                 if (Arrays.equals(guessArray, currentArray)) {
-                    if (isPlayer1) {
-                        isPlayer1 = false;
-
+                    if (getPlayer1()) {
+                        setPlayer1(false);
                     } else {
-                        isPlayer1 = true;
+                        setPlayer1(true);
                     }
 
                     startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
                 } else {
-                    if (isPlayer1) {
+                    if (getPlayer1()) {
                         player1Points++;
 
                     } else {
@@ -164,14 +162,14 @@ public class GamePageActivity extends AppCompatActivity {
                 setPhraseLabelAfterClick.setText(newHiddenPhrase);
                 letterBButton.setVisibility(View.GONE);
                 if (Arrays.equals(guessArray, currentArray)) {
-                    if (isPlayer1) {
-                        isPlayer1 = false;
+                    if (getPlayer1()) {
+                        setPlayer1(false);
                     } else {
-                        isPlayer1 = true;
+                        setPlayer1(true);
                     }
                     startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
                 } else {
-                    if (isPlayer1) {
+                    if (getPlayer1()) {
                         player1Points++;
 
                     } else {
@@ -202,14 +200,14 @@ public class GamePageActivity extends AppCompatActivity {
                 setPhraseLabelAfterClick.setText(newHiddenPhrase);
                 letterCButton.setVisibility(View.GONE);
                 if (Arrays.equals(guessArray, currentArray)) {
-                    if (isPlayer1) {
-                        isPlayer1 = false;
+                    if (getPlayer1()) {
+                        setPlayer1(false);
                     } else {
-                        isPlayer1 = true;
+                        setPlayer1(true);
                     }
                     startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
                 } else {
-                    if (isPlayer1) {
+                    if (getPlayer1()) {
                         player1Points++;
 
                     } else {
@@ -239,14 +237,14 @@ public class GamePageActivity extends AppCompatActivity {
                 setPhraseLabelAfterClick.setText(newHiddenPhrase);
                 letterDButton.setVisibility(View.GONE);
                 if (Arrays.equals(guessArray, currentArray)) {
-                    if (isPlayer1) {
-                        isPlayer1 = false;
+                    if (getPlayer1()) {
+                        setPlayer1(false);
                     } else {
-                        isPlayer1 = true;
+                        setPlayer1(true);
                     }
                     startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
                 } else {
-                    if (isPlayer1) {
+                    if (getPlayer1()) {
                         player1Points++;
 
                     } else {
@@ -276,14 +274,14 @@ public class GamePageActivity extends AppCompatActivity {
                 setPhraseLabelAfterClick.setText(newHiddenPhrase);
                 letterEButton.setVisibility(View.GONE);
                 if (Arrays.equals(guessArray, currentArray)) {
-                    if (isPlayer1) {
-                        isPlayer1 = false;
+                    if (getPlayer1()) {
+                        setPlayer1(false);
                     } else {
-                        isPlayer1 = true;
+                        setPlayer1(true);
                     }
                     startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
                 } else {
-                    if (isPlayer1) {
+                    if (getPlayer1()) {
                         player1Points++;
 
                     } else {
@@ -313,14 +311,14 @@ public class GamePageActivity extends AppCompatActivity {
                 setPhraseLabelAfterClick.setText(newHiddenPhrase);
                 letterFButton.setVisibility(View.GONE);
                 if (Arrays.equals(guessArray, currentArray)) {
-                    if (isPlayer1) {
-                        isPlayer1 = false;
+                    if (getPlayer1()) {
+                        setPlayer1(false);
                     } else {
-                        isPlayer1 = true;
+                        setPlayer1(true);
                     }
                     startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
                 } else {
-                    if (isPlayer1) {
+                    if (getPlayer1()) {
                         player1Points++;
 
                     } else {
@@ -350,14 +348,14 @@ public class GamePageActivity extends AppCompatActivity {
                 setPhraseLabelAfterClick.setText(newHiddenPhrase);
                 letterGButton.setVisibility(View.GONE);
                 if (Arrays.equals(guessArray, currentArray)) {
-                    if (isPlayer1) {
-                        isPlayer1 = false;
+                    if (getPlayer1()) {
+                        setPlayer1(false);
                     } else {
-                        isPlayer1 = true;
+                        setPlayer1(true);
                     }
                     startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
                 } else {
-                    if (isPlayer1) {
+                    if (getPlayer1()) {
                         player1Points++;
 
                     } else {
@@ -387,14 +385,14 @@ public class GamePageActivity extends AppCompatActivity {
                 setPhraseLabelAfterClick.setText(newHiddenPhrase);
                 letterHButton.setVisibility(View.GONE);
                 if (Arrays.equals(guessArray, currentArray)) {
-                    if (isPlayer1) {
-                        isPlayer1 = false;
+                    if (getPlayer1()) {
+                        setPlayer1(false);
                     } else {
-                        isPlayer1 = true;
+                        setPlayer1(true);
                     }
                     startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
                 } else {
-                    if (isPlayer1) {
+                    if (getPlayer1()) {
                         player1Points++;
 
                     } else {
@@ -424,14 +422,14 @@ public class GamePageActivity extends AppCompatActivity {
                 setPhraseLabelAfterClick.setText(newHiddenPhrase);
                 letterIButton.setVisibility(View.GONE);
                 if (Arrays.equals(guessArray, currentArray)) {
-                    if (isPlayer1) {
-                        isPlayer1 = false;
+                    if (getPlayer1()) {
+                        setPlayer1(false);
                     } else {
-                        isPlayer1 = true;
+                        setPlayer1(true);
                     }
                     startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
                 } else {
-                    if (isPlayer1) {
+                    if (getPlayer1()) {
                         player1Points++;
 
                     } else {
@@ -461,14 +459,14 @@ public class GamePageActivity extends AppCompatActivity {
                 setPhraseLabelAfterClick.setText(newHiddenPhrase);
                 letterJButton.setVisibility(View.GONE);
                 if (Arrays.equals(guessArray, currentArray)) {
-                    if (isPlayer1) {
-                        isPlayer1 = false;
+                    if (getPlayer1()) {
+                        setPlayer1(false);
                     } else {
-                        isPlayer1 = true;
+                        setPlayer1(true);
                     }
                     startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
                 } else {
-                    if (isPlayer1) {
+                    if (getPlayer1()) {
                         player1Points++;
 
                     } else {
@@ -498,14 +496,14 @@ public class GamePageActivity extends AppCompatActivity {
                 setPhraseLabelAfterClick.setText(newHiddenPhrase);
                 letterKButton.setVisibility(View.GONE);
                 if (Arrays.equals(guessArray, currentArray)) {
-                    if (isPlayer1) {
-                        isPlayer1 = false;
+                    if (getPlayer1()) {
+                        setPlayer1(false);
                     } else {
-                        isPlayer1 = true;
+                        setPlayer1(true);
                     }
                     startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
                 } else {
-                    if (isPlayer1) {
+                    if (getPlayer1()) {
                         player1Points++;
 
                     } else {
@@ -535,14 +533,14 @@ public class GamePageActivity extends AppCompatActivity {
                 setPhraseLabelAfterClick.setText(newHiddenPhrase);
                 letterLButton.setVisibility(View.GONE);
                 if (Arrays.equals(guessArray, currentArray)) {
-                    if (isPlayer1) {
-                        isPlayer1 = false;
+                    if (getPlayer1()) {
+                        setPlayer1(false);
                     } else {
-                        isPlayer1 = true;
+                        setPlayer1(true);
                     }
                     startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
                 } else {
-                    if (isPlayer1) {
+                    if (getPlayer1()) {
                         player1Points++;
 
                     } else {
@@ -572,14 +570,14 @@ public class GamePageActivity extends AppCompatActivity {
                 setPhraseLabelAfterClick.setText(newHiddenPhrase);
                 letterMButton.setVisibility(View.GONE);
                 if (Arrays.equals(guessArray, currentArray)) {
-                    if (isPlayer1) {
-                        isPlayer1 = false;
+                    if (getPlayer1()) {
+                        setPlayer1(false);
                     } else {
-                        isPlayer1 = true;
+                        setPlayer1(true);
                     }
                     startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
                 } else {
-                    if (isPlayer1) {
+                    if (getPlayer1()) {
                         player1Points++;
 
                     } else {
@@ -609,14 +607,14 @@ public class GamePageActivity extends AppCompatActivity {
                 setPhraseLabelAfterClick.setText(newHiddenPhrase);
                 letterNButton.setVisibility(View.GONE);
                 if (Arrays.equals(guessArray, currentArray)) {
-                    if (isPlayer1) {
-                        isPlayer1 = false;
+                    if (getPlayer1()) {
+                        setPlayer1(false);
                     } else {
-                        isPlayer1 = true;
+                        setPlayer1(true);
                     }
                     startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
                 } else {
-                    if (isPlayer1) {
+                    if (getPlayer1()) {
                         player1Points++;
 
                     } else {
@@ -646,14 +644,14 @@ public class GamePageActivity extends AppCompatActivity {
                 setPhraseLabelAfterClick.setText(newHiddenPhrase);
                 letterOButton.setVisibility(View.GONE);
                 if (Arrays.equals(guessArray, currentArray)) {
-                    if (isPlayer1) {
-                        isPlayer1 = false;
+                    if (getPlayer1()) {
+                        setPlayer1(false);
                     } else {
-                        isPlayer1 = true;
+                        setPlayer1(true);
                     }
                     startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
                 } else {
-                    if (isPlayer1) {
+                    if (getPlayer1()) {
                         player1Points++;
 
                     } else {
@@ -683,14 +681,14 @@ public class GamePageActivity extends AppCompatActivity {
                 setPhraseLabelAfterClick.setText(newHiddenPhrase);
                 letterPButton.setVisibility(View.GONE);
                 if (Arrays.equals(guessArray, currentArray)) {
-                    if (isPlayer1) {
-                        isPlayer1 = false;
+                    if (getPlayer1()) {
+                        setPlayer1(false);
                     } else {
-                        isPlayer1 = true;
+                        setPlayer1(true);
                     }
                     startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
                 } else {
-                    if (isPlayer1) {
+                    if (getPlayer1()) {
                         player1Points++;
 
                     } else {
@@ -720,14 +718,14 @@ public class GamePageActivity extends AppCompatActivity {
                 setPhraseLabelAfterClick.setText(newHiddenPhrase);
                 letterQButton.setVisibility(View.GONE);
                 if (Arrays.equals(guessArray, currentArray)) {
-                    if (isPlayer1) {
-                        isPlayer1 = false;
+                    if (getPlayer1()) {
+                        setPlayer1(false);
                     } else {
-                        isPlayer1 = true;
+                        setPlayer1(true);
                     }
                     startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
                 } else {
-                    if (isPlayer1) {
+                    if (getPlayer1()) {
                         player1Points++;
 
                     } else {
@@ -757,14 +755,14 @@ public class GamePageActivity extends AppCompatActivity {
                 setPhraseLabelAfterClick.setText(newHiddenPhrase);
                 letterRButton.setVisibility(View.GONE);
                 if (Arrays.equals(guessArray, currentArray)) {
-                    if (isPlayer1) {
-                        isPlayer1 = false;
+                    if (getPlayer1()) {
+                        setPlayer1(false);
                     } else {
-                        isPlayer1 = true;
+                        setPlayer1(true);
                     }
                     startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
                 } else {
-                    if (isPlayer1) {
+                    if (getPlayer1()) {
                         player1Points++;
 
                     } else {
@@ -794,14 +792,14 @@ public class GamePageActivity extends AppCompatActivity {
                 setPhraseLabelAfterClick.setText(newHiddenPhrase);
                 letterSButton.setVisibility(View.GONE);
                 if (Arrays.equals(guessArray, currentArray)) {
-                    if (isPlayer1) {
-                        isPlayer1 = false;
+                    if (getPlayer1()) {
+                        setPlayer1(false);
                     } else {
-                        isPlayer1 = true;
+                        setPlayer1(true);
                     }
                     startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
                 } else {
-                    if (isPlayer1) {
+                    if (getPlayer1()) {
                         player1Points++;
 
                     } else {
@@ -831,14 +829,14 @@ public class GamePageActivity extends AppCompatActivity {
                 setPhraseLabelAfterClick.setText(newHiddenPhrase);
                 letterTButton.setVisibility(View.GONE);
                 if (Arrays.equals(guessArray, currentArray)) {
-                    if (isPlayer1) {
-                        isPlayer1 = false;
+                    if (getPlayer1()) {
+                        setPlayer1(false);
                     } else {
-                        isPlayer1 = true;
+                        setPlayer1(true);
                     }
                     startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
                 } else {
-                    if (isPlayer1) {
+                    if (getPlayer1()) {
                         player1Points++;
 
                     } else {
@@ -868,14 +866,14 @@ public class GamePageActivity extends AppCompatActivity {
                 setPhraseLabelAfterClick.setText(newHiddenPhrase);
                 letterUButton.setVisibility(View.GONE);
                 if (Arrays.equals(guessArray, currentArray)) {
-                    if (isPlayer1) {
-                        isPlayer1 = false;
+                    if (getPlayer1()) {
+                        setPlayer1(false);
                     } else {
-                        isPlayer1 = true;
+                        setPlayer1(true);
                     }
                     startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
                 } else {
-                    if (isPlayer1) {
+                    if (getPlayer1()) {
                         player1Points++;
 
                     } else {
@@ -905,14 +903,14 @@ public class GamePageActivity extends AppCompatActivity {
                 setPhraseLabelAfterClick.setText(newHiddenPhrase);
                 letterVButton.setVisibility(View.GONE);
                 if (Arrays.equals(guessArray, currentArray)) {
-                    if (isPlayer1) {
-                        isPlayer1 = false;
+                    if (getPlayer1()) {
+                        setPlayer1(false);
                     } else {
-                        isPlayer1 = true;
+                        setPlayer1(true);
                     }
                     startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
                 } else {
-                    if (isPlayer1) {
+                    if (getPlayer1()) {
                         player1Points++;
 
                     } else {
@@ -942,14 +940,14 @@ public class GamePageActivity extends AppCompatActivity {
                 setPhraseLabelAfterClick.setText(newHiddenPhrase);
                 letterWButton.setVisibility(View.GONE);
                 if (Arrays.equals(guessArray, currentArray)) {
-                    if (isPlayer1) {
-                        isPlayer1 = false;
+                    if (getPlayer1()) {
+                        setPlayer1(false);
                     } else {
-                        isPlayer1 = true;
+                        setPlayer1(true);
                     }
                     startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
                 } else {
-                    if (isPlayer1) {
+                    if (getPlayer1()) {
                         player1Points++;
 
                     } else {
@@ -979,14 +977,14 @@ public class GamePageActivity extends AppCompatActivity {
                 setPhraseLabelAfterClick.setText(newHiddenPhrase);
                 letterXButton.setVisibility(View.GONE);
                 if (Arrays.equals(guessArray, currentArray)) {
-                    if (isPlayer1) {
-                        isPlayer1 = false;
+                    if (getPlayer1()) {
+                        setPlayer1(false);
                     } else {
-                        isPlayer1 = true;
+                        setPlayer1(true);
                     }
                     startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
                 } else {
-                    if (isPlayer1) {
+                    if (getPlayer1()) {
                         player1Points++;
 
                     } else {
@@ -1016,14 +1014,14 @@ public class GamePageActivity extends AppCompatActivity {
                 setPhraseLabelAfterClick.setText(newHiddenPhrase);
                 letterYButton.setVisibility(View.GONE);
                 if (Arrays.equals(guessArray, currentArray)) {
-                    if (isPlayer1) {
-                        isPlayer1 = false;
+                    if (getPlayer1()) {
+                        setPlayer1(false);
                     } else {
-                        isPlayer1 = true;
+                        setPlayer1(true);
                     }
                     startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
                 } else {
-                    if (isPlayer1) {
+                    if (getPlayer1()) {
                         player1Points++;
 
                     } else {
@@ -1053,14 +1051,14 @@ public class GamePageActivity extends AppCompatActivity {
                 setPhraseLabelAfterClick.setText(newHiddenPhrase);
                 letterZButton.setVisibility(View.GONE);
                 if (Arrays.equals(guessArray, currentArray)) {
-                    if (isPlayer1) {
-                        isPlayer1 = false;
+                    if (getPlayer1()) {
+                        setPlayer1(false);
                     } else {
-                        isPlayer1 = true;
+                        setPlayer1(true);
                     }
                     startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
                 } else {
-                    if (isPlayer1) {
+                    if (getPlayer1()) {
                         player1Points++;
 
                     } else {

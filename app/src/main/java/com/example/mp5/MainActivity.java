@@ -10,6 +10,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private boolean isPlayer1 = true;
+
     public boolean getPlayer1() {
         return isPlayer1;
     }
@@ -23,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.startpage);
-        isPlayer1 = true;
         configureStartButton();
     }
 
