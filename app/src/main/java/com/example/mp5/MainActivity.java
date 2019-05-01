@@ -9,6 +9,16 @@ import android.widget.TextView;
 
 public class MainActivity extends WinPageActivity {
 
+    private boolean isPlayer1 = true;
+    public boolean getPlayer1() {
+        return isPlayer1;
+    }
+
+    public void setPlayer1(boolean setPlayer1) {
+        isPlayer1 = setPlayer1;
+    }
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

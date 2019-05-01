@@ -7,8 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class QuestionPageActivity extends AppCompatActivity {
-    public boolean isPlayer1 = true;
+public class QuestionPageActivity extends MainActivity {
     private int player1Points = 0;
     private int player2Points = 0;
 
@@ -39,34 +38,7 @@ public class QuestionPageActivity extends AppCompatActivity {
         return player2Points;
     }
 
-    public String generateRandomPhrase() {
-        String[] randomPhrases = new String[10];
-        randomPhrases[0] = "recursive";
-        randomPhrases[1] = "constructor";
-        randomPhrases[2] = "inheritance";
-        randomPhrases[3] = "polymorphism";
-        randomPhrases[4] = "arraylist";
-        randomPhrases[5] = "parameter";
-        randomPhrases[6] = "boolean";
-        randomPhrases[7] = "protected";
-        randomPhrases[8] = "variable";
-        randomPhrases[9] = "abstract";
-        String[] hiddenPhrases = new String[10];
-        hiddenPhrases[0] = "_________";
-        hiddenPhrases[1] = "___________";
-        hiddenPhrases[2] = "___________";
-        hiddenPhrases[3] = "____________";
-        hiddenPhrases[4] = "_________";
-        hiddenPhrases[5] = "_________";
-        hiddenPhrases[6] = "_______";
-        hiddenPhrases[7] = "_________";
-        hiddenPhrases[8] = "________";
-        hiddenPhrases[9] = "________";
 
-        int x = (int) (Math.random()*((10)));
-        String gamePhrase = hiddenPhrases[x];
-        return gamePhrase;
-    }
 
     public void generateRandomQuestion() {
         int rng = getRandomNumber();
@@ -168,7 +140,7 @@ public class QuestionPageActivity extends AppCompatActivity {
         configureQuestionButtons();
         TextView setPlayerNumberLabel = (TextView) findViewById(R.id.playerNumberLabel);
         String whichPlayer;
-        if (isPlayer1) {
+        if (getPlayer1()) {
             whichPlayer = "Player 1";
             setPlayerNumberLabel.setText(whichPlayer);
         } else {
@@ -191,10 +163,10 @@ public class QuestionPageActivity extends AppCompatActivity {
         questionBButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (isPlayer1) {
-                    isPlayer1 = false;
+                if (getPlayer1()) {
+                    setPlayer1(false);
                 } else {
-                    isPlayer1 = true;
+                    setPlayer1(true);
                 }
                 startActivity(new Intent(QuestionPageActivity.this, QuestionPageActivity.class));
             }
@@ -204,10 +176,10 @@ public class QuestionPageActivity extends AppCompatActivity {
         questionCButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (isPlayer1) {
-                    isPlayer1 = false;
+                if (getPlayer1()) {
+                    setPlayer1(false);
                 } else {
-                    isPlayer1 = true;
+                    setPlayer1(true);
                 }
                 startActivity(new Intent(QuestionPageActivity.this, QuestionPageActivity.class));
             }
@@ -217,10 +189,10 @@ public class QuestionPageActivity extends AppCompatActivity {
         questionDButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (isPlayer1) {
-                    isPlayer1 = false;
+                if (getPlayer1()) {
+                    setPlayer1(false);
                 } else {
-                    isPlayer1 = true;
+                    setPlayer1(true);
                 }
                 startActivity(new Intent(QuestionPageActivity.this, QuestionPageActivity.class));
             }
