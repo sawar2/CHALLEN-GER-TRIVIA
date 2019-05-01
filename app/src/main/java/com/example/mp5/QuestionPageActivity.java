@@ -78,10 +78,10 @@ public class QuestionPageActivity extends AppCompatActivity {
         randomQuestions[3] = "Which of these is an implementation of a list?";
         randomQuestions[4] = "What is the difference between type int and type Integer?";
         randomQuestions[5] = "How many bits are assigned to hold an int?";
-        randomQuestions[6] = "Which of these is true of objects";
-        randomQuestions[7] = "Which of these is NOT a sorting algorithm";
+        randomQuestions[6] = "Which of these is true of objects?";
+        randomQuestions[7] = "Which of these is NOT a sorting algorithm?";
         randomQuestions[8] = "What is the function of a getter?";
-        randomQuestions[9] = "What is the function of a setter";
+        randomQuestions[9] = "What is the function of a setter?";
 
 
         String[] questionAOptions = new String[10];
