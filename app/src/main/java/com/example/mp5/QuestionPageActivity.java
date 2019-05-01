@@ -186,6 +186,7 @@ public class QuestionPageActivity extends AppCompatActivity {
                 } else {
                     isPlayer1 = true;
                 }
+                startActivity(new Intent(QuestionPageActivity.this, QuestionPageActivity.class));
             }
         });
 
@@ -198,6 +199,7 @@ public class QuestionPageActivity extends AppCompatActivity {
                 } else {
                     isPlayer1 = true;
                 }
+                startActivity(new Intent(QuestionPageActivity.this, QuestionPageActivity.class));
             }
         });
 
@@ -210,6 +212,7 @@ public class QuestionPageActivity extends AppCompatActivity {
                 } else {
                     isPlayer1 = true;
                 }
+                startActivity(new Intent(QuestionPageActivity.this, QuestionPageActivity.class));
             }
         });
     }

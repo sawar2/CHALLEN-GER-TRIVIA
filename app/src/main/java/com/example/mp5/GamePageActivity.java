@@ -126,9 +126,11 @@ public class GamePageActivity extends AppCompatActivity {
                 if (Arrays.equals(guessArray, currentArray)) {
                     if (isPlayer1) {
                         isPlayer1 = false;
+
                     } else {
                         isPlayer1 = true;
                     }
+
                     startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
                 } else {
                     if (isPlayer1) {
