@@ -69,7 +69,7 @@ public class GamePageActivity extends AppCompatActivity {
         hiddenPhrases[3] = "____________";
         hiddenPhrases[4] = "_________";
         hiddenPhrases[5] = "_________";
-        hiddenPhrases[6] = "______";
+        hiddenPhrases[6] = "_______";
         hiddenPhrases[7] = "_________";
         hiddenPhrases[8] = "________";
         hiddenPhrases[9] = "________";
