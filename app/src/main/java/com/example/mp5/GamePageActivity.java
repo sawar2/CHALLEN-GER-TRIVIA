@@ -15,6 +15,8 @@ public class GamePageActivity extends AppCompatActivity {
     public int player2Points = 0;
     private String correctPhraseLabel;
     private String getPhraseLabel;
+    private char[] correctArray;
+    private char[] guessArray;
     public boolean isPlayer1 = true;
 
     //Random Number Generator
@@ -75,6 +77,8 @@ public class GamePageActivity extends AppCompatActivity {
         String phraseLabel = hiddenPhrases[rng];
         getPhraseLabel = phraseLabel;
         correctPhraseLabel = randomPhrases[rng];
+        correctArray = correctPhraseLabel.toCharArray();
+        guessArray = getPhraseLabel.toCharArray();
 
         TextView setPhraseLabel = (TextView) findViewById(R.id.phraseLabel);
         setPhraseLabel.setText(phraseLabel);
@@ -99,6 +103,7 @@ public class GamePageActivity extends AppCompatActivity {
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         gameHasNotStarted = false;
+
     }
 
     public void configureLetterButtons() {
@@ -107,8 +112,6 @@ public class GamePageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 char guessedChar = 'a';
-                char[] correctArray = correctPhraseLabel.toCharArray();
-                char[] guessArray = getPhraseLabel.toCharArray();
                 char[] currentArray = new char[guessArray.length];
                 currentArray = Arrays.copyOf(guessArray, guessArray.length);
                 for (int i = 0; i < correctArray.length; i++) {
@@ -144,8 +147,6 @@ public class GamePageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 char guessedChar = 'b';
-                char[] correctArray = correctPhraseLabel.toCharArray();
-                char[] guessArray = getPhraseLabel.toCharArray();
                 char[] currentArray = new char[guessArray.length];
                 currentArray = Arrays.copyOf(guessArray, guessArray.length);
                 for (int i = 0; i < correctArray.length; i++) {
@@ -181,8 +182,6 @@ public class GamePageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 char guessedChar = 'c';
-                char[] correctArray = correctPhraseLabel.toCharArray();
-                char[] guessArray = getPhraseLabel.toCharArray();
                 char[] currentArray = new char[guessArray.length];
                 currentArray = Arrays.copyOf(guessArray, guessArray.length);
                 for (int i = 0; i < correctArray.length; i++) {
@@ -217,8 +216,6 @@ public class GamePageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 char guessedChar = 'd';
-                char[] correctArray = correctPhraseLabel.toCharArray();
-                char[] guessArray = getPhraseLabel.toCharArray();
                 char[] currentArray = new char[guessArray.length];
                 currentArray = Arrays.copyOf(guessArray, guessArray.length);
                 for (int i = 0; i < correctArray.length; i++) {
@@ -253,8 +250,6 @@ public class GamePageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 char guessedChar = 'e';
-                char[] correctArray = correctPhraseLabel.toCharArray();
-                char[] guessArray = getPhraseLabel.toCharArray();
                 char[] currentArray = new char[guessArray.length];
                 currentArray = Arrays.copyOf(guessArray, guessArray.length);
                 for (int i = 0; i < correctArray.length; i++) {
@@ -289,8 +284,6 @@ public class GamePageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 char guessedChar = 'f';
-                char[] correctArray = correctPhraseLabel.toCharArray();
-                char[] guessArray = getPhraseLabel.toCharArray();
                 char[] currentArray = new char[guessArray.length];
                 currentArray = Arrays.copyOf(guessArray, guessArray.length);
                 for (int i = 0; i < correctArray.length; i++) {
@@ -325,8 +318,6 @@ public class GamePageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 char guessedChar = 'g';
-                char[] correctArray = correctPhraseLabel.toCharArray();
-                char[] guessArray = getPhraseLabel.toCharArray();
                 char[] currentArray = new char[guessArray.length];
                 currentArray = Arrays.copyOf(guessArray, guessArray.length);
                 for (int i = 0; i < correctArray.length; i++) {
@@ -361,8 +352,6 @@ public class GamePageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 char guessedChar = 'h';
-                char[] correctArray = correctPhraseLabel.toCharArray();
-                char[] guessArray = getPhraseLabel.toCharArray();
                 char[] currentArray = new char[guessArray.length];
                 currentArray = Arrays.copyOf(guessArray, guessArray.length);
                 for (int i = 0; i < correctArray.length; i++) {
@@ -397,8 +386,6 @@ public class GamePageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 char guessedChar = 'i';
-                char[] correctArray = correctPhraseLabel.toCharArray();
-                char[] guessArray = getPhraseLabel.toCharArray();
                 char[] currentArray = new char[guessArray.length];
                 currentArray = Arrays.copyOf(guessArray, guessArray.length);
                 for (int i = 0; i < correctArray.length; i++) {
@@ -433,8 +420,6 @@ public class GamePageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 char guessedChar = 'j';
-                char[] correctArray = correctPhraseLabel.toCharArray();
-                char[] guessArray = getPhraseLabel.toCharArray();
                 char[] currentArray = new char[guessArray.length];
                 currentArray = Arrays.copyOf(guessArray, guessArray.length);
                 for (int i = 0; i < correctArray.length; i++) {
@@ -469,8 +454,6 @@ public class GamePageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 char guessedChar = 'k';
-                char[] correctArray = correctPhraseLabel.toCharArray();
-                char[] guessArray = getPhraseLabel.toCharArray();
                 char[] currentArray = new char[guessArray.length];
                 currentArray = Arrays.copyOf(guessArray, guessArray.length);
                 for (int i = 0; i < correctArray.length; i++) {
@@ -505,8 +488,6 @@ public class GamePageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 char guessedChar = 'l';
-                char[] correctArray = correctPhraseLabel.toCharArray();
-                char[] guessArray = getPhraseLabel.toCharArray();
                 char[] currentArray = new char[guessArray.length];
                 currentArray = Arrays.copyOf(guessArray, guessArray.length);
                 for (int i = 0; i < correctArray.length; i++) {
@@ -541,8 +522,6 @@ public class GamePageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 char guessedChar = 'm';
-                char[] correctArray = correctPhraseLabel.toCharArray();
-                char[] guessArray = getPhraseLabel.toCharArray();
                 char[] currentArray = new char[guessArray.length];
                 currentArray = Arrays.copyOf(guessArray, guessArray.length);
                 for (int i = 0; i < correctArray.length; i++) {
@@ -577,8 +556,6 @@ public class GamePageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 char guessedChar = 'n';
-                char[] correctArray = correctPhraseLabel.toCharArray();
-                char[] guessArray = getPhraseLabel.toCharArray();
                 char[] currentArray = new char[guessArray.length];
                 currentArray = Arrays.copyOf(guessArray, guessArray.length);
                 for (int i = 0; i < correctArray.length; i++) {
@@ -613,8 +590,6 @@ public class GamePageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 char guessedChar = 'o';
-                char[] correctArray = correctPhraseLabel.toCharArray();
-                char[] guessArray = getPhraseLabel.toCharArray();
                 char[] currentArray = new char[guessArray.length];
                 currentArray = Arrays.copyOf(guessArray, guessArray.length);
                 for (int i = 0; i < correctArray.length; i++) {
