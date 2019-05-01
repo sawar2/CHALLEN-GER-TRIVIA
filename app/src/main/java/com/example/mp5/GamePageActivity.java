@@ -11,8 +11,8 @@ import java.util.Arrays;
 public class GamePageActivity extends AppCompatActivity {
 
     public boolean gameHasNotStarted = true;
-    public int player1Points = 0;
-    public int player2Points = 0;
+    public Integer player1Points = 0;
+    public Integer player2Points = 0;
     private String correctPhraseLabel;
     private String getPhraseLabel;
     private char[] correctArray;
@@ -137,6 +137,9 @@ public class GamePageActivity extends AppCompatActivity {
                     } else {
                         player2Points++;
                     }
+                }
+                if (Arrays.equals(guessArray, correctArray)) {
+                    startActivity(new Intent(GamePageActivity.this, WinPageActivity.class));
                 }
             }
         });
