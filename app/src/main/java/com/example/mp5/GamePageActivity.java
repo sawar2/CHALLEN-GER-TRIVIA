@@ -10,6 +10,7 @@ import java.util.Arrays;
 
 public class GamePageActivity extends AppCompatActivity {
 
+    public boolean gameHasNotStarted = true;
     public int player1Points = 0;
     public int player2Points = 0;
     private String correctPhraseLabel;
@@ -86,7 +87,11 @@ public class GamePageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gamepage);
-        generateRandomPhrase();
+        if (gameHasNotStarted) {
+            generateRandomPhrase();
+            gameHasNotStarted = false;
+        }
+
         configureLetterButtons();
     }
 
