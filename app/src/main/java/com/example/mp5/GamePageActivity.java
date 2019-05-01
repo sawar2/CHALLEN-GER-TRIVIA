@@ -6,13 +6,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import java.util.Arrays;
 
 public class GamePageActivity extends AppCompatActivity {
 
-    private int player1Points = 0;
-    private int player2Points = 0;
+    public int player1Points = 0;
+    public int player2Points = 0;
     private String correctPhraseLabel;
     private String getPhraseLabel;
+    public boolean isPlayer1 = true;
 
     //Random Number Generator
     public int getRandomNumber() {
@@ -96,6 +98,7 @@ public class GamePageActivity extends AppCompatActivity {
                 char guessedChar = 'a';
                 char[] correctArray = correctPhraseLabel.toCharArray();
                 char[] guessArray = getPhraseLabel.toCharArray();
+                char[] currentArray = guessArray;
                 for (int i = 0; i < correctArray.length; i++) {
                     if (guessedChar == correctArray[i]) {
                         guessArray[i] = correctArray[i];
@@ -105,6 +108,21 @@ public class GamePageActivity extends AppCompatActivity {
                 TextView setPhraseLabelAfterClick = (TextView) findViewById(R.id.phraseLabel);
                 setPhraseLabelAfterClick.setText(newHiddenPhrase);
                 letterAButton.setVisibility(View.GONE);
+                if (Arrays.equals(guessArray, currentArray)) {
+                    if (isPlayer1) {
+                        isPlayer1 = false;
+                    } else {
+                        isPlayer1 = true;
+                    }
+                    startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
+                } else {
+                    if (isPlayer1) {
+                        player1Points++;
+
+                    } else {
+                        player2Points++;
+                    }
+                }
             }
         });
     }
