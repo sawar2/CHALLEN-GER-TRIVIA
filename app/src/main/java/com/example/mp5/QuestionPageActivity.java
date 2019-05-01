@@ -1,6 +1,7 @@
 package com.example.mp5;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 public class QuestionPageActivity extends MainActivity {
     private int player1Points = 0;
     private int player2Points = 0;
+
 
     //Random Number Generator
     public int getRandomNumber() {
@@ -148,6 +150,7 @@ public class QuestionPageActivity extends MainActivity {
             setPlayerNumberLabel.setText(whichPlayer);
         }
 
+
     }
 
     public void configureQuestionButtons() {
@@ -155,6 +158,7 @@ public class QuestionPageActivity extends MainActivity {
         questionAButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                rightSound.start();
                 startActivity(new Intent(QuestionPageActivity.this, GamePageActivity.class));
             }
         });
@@ -168,6 +172,7 @@ public class QuestionPageActivity extends MainActivity {
                 } else {
                     setPlayer1(true);
                 }
+                wrongSound.start();
                 startActivity(new Intent(QuestionPageActivity.this, QuestionPageActivity.class));
             }
         });
@@ -181,6 +186,7 @@ public class QuestionPageActivity extends MainActivity {
                 } else {
                     setPlayer1(true);
                 }
+                wrongSound.start();
                 startActivity(new Intent(QuestionPageActivity.this, QuestionPageActivity.class));
             }
         });
@@ -194,6 +200,7 @@ public class QuestionPageActivity extends MainActivity {
                 } else {
                     setPlayer1(true);
                 }
+                wrongSound.start();
                 startActivity(new Intent(QuestionPageActivity.this, QuestionPageActivity.class));
             }
         });

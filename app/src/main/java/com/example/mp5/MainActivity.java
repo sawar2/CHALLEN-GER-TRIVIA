@@ -1,6 +1,7 @@
 package com.example.mp5;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,8 +9,9 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
-    private boolean isPlayer1 = true;
+    final MediaPlayer rightSound = MediaPlayer.create(this, R.raw.right);
+    final MediaPlayer wrongSound = MediaPlayer.create(this, R.raw.wrong);
+    public boolean isPlayer1 = true;
 
     public boolean getPlayer1() {
         return isPlayer1;

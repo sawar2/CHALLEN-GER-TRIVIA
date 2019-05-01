@@ -128,7 +128,7 @@ public class GamePageActivity extends MainActivity {
                     } else {
                         setPlayer1(true);
                     }
-
+                    wrongSound.start();
                     startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
                 } else {
                     if (getPlayer1()) {
@@ -167,6 +167,7 @@ public class GamePageActivity extends MainActivity {
                     } else {
                         setPlayer1(true);
                     }
+
                     startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
                 } else {
                     if (getPlayer1()) {
