@@ -167,6 +167,7 @@ public class GamePageActivity extends MainActivity {
                 setPhraseLabelAfterClick.setText(newHiddenPhrase);
                 letterBButton.setVisibility(View.GONE);
                 if (Arrays.equals(guessArray, currentArray)) {
+                    wrong.start();
                     if (getPlayer1()) {
                         setPlayer1(false);
                     } else {
@@ -175,6 +176,7 @@ public class GamePageActivity extends MainActivity {
 
                     startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
                 } else {
+                    right.start();
                     if (getPlayer1()) {
                         player1Points++;
 
