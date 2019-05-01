@@ -176,6 +176,9 @@ public class GamePageActivity extends AppCompatActivity {
                         player2Points++;
                     }
                 }
+                if (Arrays.equals(guessArray, correctArray)) {
+                    startActivity(new Intent(GamePageActivity.this, WinPageActivity.class));
+                }
             }
         });
 
@@ -211,6 +214,9 @@ public class GamePageActivity extends AppCompatActivity {
                         player2Points++;
                     }
                 }
+                if (Arrays.equals(guessArray, correctArray)) {
+                    startActivity(new Intent(GamePageActivity.this, WinPageActivity.class));
+                }
             }
         });
 
@@ -244,6 +250,9 @@ public class GamePageActivity extends AppCompatActivity {
                     } else {
                         player2Points++;
                     }
+                }
+                if (Arrays.equals(guessArray, correctArray)) {
+                    startActivity(new Intent(GamePageActivity.this, WinPageActivity.class));
                 }
             }
         });
@@ -279,6 +288,9 @@ public class GamePageActivity extends AppCompatActivity {
                         player2Points++;
                     }
                 }
+                if (Arrays.equals(guessArray, correctArray)) {
+                    startActivity(new Intent(GamePageActivity.this, WinPageActivity.class));
+                }
             }
         });
 
@@ -312,6 +324,9 @@ public class GamePageActivity extends AppCompatActivity {
                     } else {
                         player2Points++;
                     }
+                }
+                if (Arrays.equals(guessArray, correctArray)) {
+                    startActivity(new Intent(GamePageActivity.this, WinPageActivity.class));
                 }
             }
         });
@@ -347,6 +362,9 @@ public class GamePageActivity extends AppCompatActivity {
                         player2Points++;
                     }
                 }
+                if (Arrays.equals(guessArray, correctArray)) {
+                    startActivity(new Intent(GamePageActivity.this, WinPageActivity.class));
+                }
             }
         });
 
@@ -380,6 +398,9 @@ public class GamePageActivity extends AppCompatActivity {
                     } else {
                         player2Points++;
                     }
+                }
+                if (Arrays.equals(guessArray, correctArray)) {
+                    startActivity(new Intent(GamePageActivity.this, WinPageActivity.class));
                 }
             }
         });
@@ -415,6 +436,9 @@ public class GamePageActivity extends AppCompatActivity {
                         player2Points++;
                     }
                 }
+                if (Arrays.equals(guessArray, correctArray)) {
+                    startActivity(new Intent(GamePageActivity.this, WinPageActivity.class));
+                }
             }
         });
 
@@ -448,6 +472,9 @@ public class GamePageActivity extends AppCompatActivity {
                     } else {
                         player2Points++;
                     }
+                }
+                if (Arrays.equals(guessArray, correctArray)) {
+                    startActivity(new Intent(GamePageActivity.this, WinPageActivity.class));
                 }
             }
         });
@@ -483,6 +510,9 @@ public class GamePageActivity extends AppCompatActivity {
                         player2Points++;
                     }
                 }
+                if (Arrays.equals(guessArray, correctArray)) {
+                    startActivity(new Intent(GamePageActivity.this, WinPageActivity.class));
+                }
             }
         });
 
@@ -516,6 +546,9 @@ public class GamePageActivity extends AppCompatActivity {
                     } else {
                         player2Points++;
                     }
+                }
+                if (Arrays.equals(guessArray, correctArray)) {
+                    startActivity(new Intent(GamePageActivity.this, WinPageActivity.class));
                 }
             }
         });
@@ -551,6 +584,9 @@ public class GamePageActivity extends AppCompatActivity {
                         player2Points++;
                     }
                 }
+                if (Arrays.equals(guessArray, correctArray)) {
+                    startActivity(new Intent(GamePageActivity.this, WinPageActivity.class));
+                }
             }
         });
 
@@ -584,6 +620,9 @@ public class GamePageActivity extends AppCompatActivity {
                     } else {
                         player2Points++;
                     }
+                }
+                if (Arrays.equals(guessArray, correctArray)) {
+                    startActivity(new Intent(GamePageActivity.this, WinPageActivity.class));
                 }
             }
         });
@@ -619,6 +658,9 @@ public class GamePageActivity extends AppCompatActivity {
                         player2Points++;
                     }
                 }
+                if (Arrays.equals(guessArray, correctArray)) {
+                    startActivity(new Intent(GamePageActivity.this, WinPageActivity.class));
+                }
             }
         });
 
@@ -652,6 +694,9 @@ public class GamePageActivity extends AppCompatActivity {
                     } else {
                         player2Points++;
                     }
+                }
+                if (Arrays.equals(guessArray, correctArray)) {
+                    startActivity(new Intent(GamePageActivity.this, WinPageActivity.class));
                 }
             }
         });
@@ -687,6 +732,9 @@ public class GamePageActivity extends AppCompatActivity {
                         player2Points++;
                     }
                 }
+                if (Arrays.equals(guessArray, correctArray)) {
+                    startActivity(new Intent(GamePageActivity.this, WinPageActivity.class));
+                }
             }
         });
 
@@ -720,6 +768,9 @@ public class GamePageActivity extends AppCompatActivity {
                     } else {
                         player2Points++;
                     }
+                }
+                if (Arrays.equals(guessArray, correctArray)) {
+                    startActivity(new Intent(GamePageActivity.this, WinPageActivity.class));
                 }
             }
         });
@@ -755,6 +806,9 @@ public class GamePageActivity extends AppCompatActivity {
                         player2Points++;
                     }
                 }
+                if (Arrays.equals(guessArray, correctArray)) {
+                    startActivity(new Intent(GamePageActivity.this, WinPageActivity.class));
+                }
             }
         });
 
@@ -788,6 +842,9 @@ public class GamePageActivity extends AppCompatActivity {
                     } else {
                         player2Points++;
                     }
+                }
+                if (Arrays.equals(guessArray, correctArray)) {
+                    startActivity(new Intent(GamePageActivity.this, WinPageActivity.class));
                 }
             }
         });
@@ -823,6 +880,9 @@ public class GamePageActivity extends AppCompatActivity {
                         player2Points++;
                     }
                 }
+                if (Arrays.equals(guessArray, correctArray)) {
+                    startActivity(new Intent(GamePageActivity.this, WinPageActivity.class));
+                }
             }
         });
 
@@ -856,6 +916,9 @@ public class GamePageActivity extends AppCompatActivity {
                     } else {
                         player2Points++;
                     }
+                }
+                if (Arrays.equals(guessArray, correctArray)) {
+                    startActivity(new Intent(GamePageActivity.this, WinPageActivity.class));
                 }
             }
         });
@@ -891,6 +954,9 @@ public class GamePageActivity extends AppCompatActivity {
                         player2Points++;
                     }
                 }
+                if (Arrays.equals(guessArray, correctArray)) {
+                    startActivity(new Intent(GamePageActivity.this, WinPageActivity.class));
+                }
             }
         });
 
@@ -924,6 +990,9 @@ public class GamePageActivity extends AppCompatActivity {
                     } else {
                         player2Points++;
                     }
+                }
+                if (Arrays.equals(guessArray, correctArray)) {
+                    startActivity(new Intent(GamePageActivity.this, WinPageActivity.class));
                 }
             }
         });
@@ -959,6 +1028,9 @@ public class GamePageActivity extends AppCompatActivity {
                         player2Points++;
                     }
                 }
+                if (Arrays.equals(guessArray, correctArray)) {
+                    startActivity(new Intent(GamePageActivity.this, WinPageActivity.class));
+                }
             }
         });
 
@@ -992,6 +1064,9 @@ public class GamePageActivity extends AppCompatActivity {
                     } else {
                         player2Points++;
                     }
+                }
+                if (Arrays.equals(guessArray, correctArray)) {
+                    startActivity(new Intent(GamePageActivity.this, WinPageActivity.class));
                 }
             }
         });
