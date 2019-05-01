@@ -98,7 +98,8 @@ public class GamePageActivity extends AppCompatActivity {
                 char guessedChar = 'a';
                 char[] correctArray = correctPhraseLabel.toCharArray();
                 char[] guessArray = getPhraseLabel.toCharArray();
-                char[] currentArray = guessArray;
+                char[] currentArray = new char[guessArray.length];
+                currentArray = Arrays.copyOf(guessArray, guessArray.length);
                 for (int i = 0; i < correctArray.length; i++) {
                     if (guessedChar == correctArray[i]) {
                         guessArray[i] = correctArray[i];
