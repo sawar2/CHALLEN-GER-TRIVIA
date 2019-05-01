@@ -95,6 +95,12 @@ public class GamePageActivity extends AppCompatActivity {
         configureLetterButtons();
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        gameHasNotStarted = false;
+    }
+
     public void configureLetterButtons() {
         final Button letterAButton = (Button) findViewById(R.id.letterA);
         letterAButton.setOnClickListener(new View.OnClickListener() {
