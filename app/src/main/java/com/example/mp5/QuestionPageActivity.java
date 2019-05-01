@@ -166,6 +166,16 @@ public class QuestionPageActivity extends AppCompatActivity {
         setContentView(R.layout.questionpage);
         generateRandomQuestion();
         configureQuestionButtons();
+        TextView setPlayerNumberLabel = (TextView) findViewById(R.id.playerNumberLabel);
+        String whichPlayer;
+        if (isPlayer1) {
+            whichPlayer = "Player 1";
+            setPlayerNumberLabel.setText(whichPlayer);
+        } else {
+            whichPlayer = "Player 2";
+            setPlayerNumberLabel.setText(whichPlayer);
+        }
+
     }
 
     public void configureQuestionButtons() {
