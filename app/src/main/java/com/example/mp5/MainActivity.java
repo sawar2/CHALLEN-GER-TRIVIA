@@ -9,8 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    final MediaPlayer rightSound;
-    final MediaPlayer wrongSound;
+
     public boolean isPlayer1 = true;
 
     public boolean getPlayer1() {
