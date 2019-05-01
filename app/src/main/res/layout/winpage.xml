@@ -15,9 +15,10 @@
         android:layout_marginTop="100dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:background="#E91E63"
+        android:background="#004B03"
         android:text="Player # wins"
         android:textColor="#00FF47"
+        android:textSize="60sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -65,6 +66,7 @@
         android:background="#9C27B0"
         android:text="Restart"
         android:textColor="#00BCD4"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
