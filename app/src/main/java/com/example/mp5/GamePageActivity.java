@@ -131,5 +131,42 @@ public class GamePageActivity extends AppCompatActivity {
                 }
             }
         });
+
+
+        final Button letterBButton = (Button) findViewById(R.id.letterB);
+        letterBButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                char guessedChar = 'b';
+                char[] correctArray = correctPhraseLabel.toCharArray();
+                char[] guessArray = getPhraseLabel.toCharArray();
+                char[] currentArray = new char[guessArray.length];
+                currentArray = Arrays.copyOf(guessArray, guessArray.length);
+                for (int i = 0; i < correctArray.length; i++) {
+                    if (guessedChar == correctArray[i]) {
+                        guessArray[i] = correctArray[i];
+                    }
+                }
+                String newHiddenPhrase = new String(guessArray);
+                TextView setPhraseLabelAfterClick = (TextView) findViewById(R.id.phraseLabel);
+                setPhraseLabelAfterClick.setText(newHiddenPhrase);
+                letterBButton.setVisibility(View.GONE);
+                if (Arrays.equals(guessArray, currentArray)) {
+                    if (isPlayer1) {
+                        isPlayer1 = false;
+                    } else {
+                        isPlayer1 = true;
+                    }
+                    startActivity(new Intent(GamePageActivity.this, QuestionPageActivity.class));
+                } else {
+                    if (isPlayer1) {
+                        player1Points++;
+
+                    } else {
+                        player2Points++;
+                    }
+                }
+            }
+        });
     }
 }
