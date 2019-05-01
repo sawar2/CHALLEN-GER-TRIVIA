@@ -30,9 +30,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void configureStartButton() {
         Button startButton = (Button) findViewById(R.id.startButton);
+        final MediaPlayer right = MediaPlayer.create(this, R.raw.right);
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                right.start();
                 startActivity(new Intent(MainActivity.this, QuestionPageActivity.class));
 
             }
