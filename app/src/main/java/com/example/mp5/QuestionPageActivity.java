@@ -46,69 +46,69 @@ public class QuestionPageActivity extends MainActivity {
         int rng = getRandomNumber();
 
         String[] randomQuestions = new String[10];
-        randomQuestions[0] = "Who does Geoffrey Challen look like?";
-        randomQuestions[1] = "How many people can get an A in CS125?";
-        randomQuestions[2] = "What is the IDE that is used in CS125?";
-        randomQuestions[3] = "Which of these is an implementation of a list?";
-        randomQuestions[4] = "What is the difference between type int and type Integer?";
-        randomQuestions[5] = "How many bits are assigned to hold an int?";
-        randomQuestions[6] = "Which of these is true of objects?";
-        randomQuestions[7] = "Which of these is NOT a sorting algorithm?";
-        randomQuestions[8] = "What is the function of a getter?";
-        randomQuestions[9] = "What is the function of a setter?";
+        randomQuestions[0] = "What is the definition of edema?";
+        randomQuestions[1] = "What is the definition of inflammation";
+        randomQuestions[2] = "What is the function of tumor necrosis factor (TNF)?";
+        randomQuestions[3] = "What's the function of a toll-like receptor?";
+        randomQuestions[4] = "What is platelet-activating factor?";
+        randomQuestions[5] = "What is a leukotriene?";
+        randomQuestions[6] = "What is the function of a prostaglandin?";
+        randomQuestions[7] = "What is the function of a selectin?";
+        randomQuestions[8] = "What is the function of an integrin?";
+        randomQuestions[9] = "What is chemotaxis?";
 
 
         String[] questionAOptions = new String[10];
 
-        questionAOptions[0] = "Caillou";
-        questionAOptions[1] = "An unlimited number";
-        questionAOptions[2] = "Android Studio";
-        questionAOptions[3] = "ArrayList";
-        questionAOptions[4] = "Integer is an object while int is not";
-        questionAOptions[5] = "32";
-        questionAOptions[6] = "You can model real world things by storing state and behavior together";
-        questionAOptions[7] = "ChallenSort";
-        questionAOptions[8] = "Returning a particular value for a variable";
-        questionAOptions[9] = "Setting a variable to a particular value";
+        questionAOptions[0] = "An excess of watery fluid collecting in the cavities or tissues of the body";
+        questionAOptions[1] = "Condition in which part of the body becomes reddened, swollen, hot, and often painful";
+        questionAOptions[2] = "One of the cytokines that make up the acute phase reaction";
+        questionAOptions[3] = "Recognize structurally conserved molecules derived from microbes";
+        questionAOptions[4] = "Causes platelet aggregation, inflammation, and allergic response";
+        questionAOptions[5] = "Metabolite of arachidonic acid";
+        questionAOptions[6] = "Inhibiting the aggregation of blood platelets";
+        questionAOptions[7] = "Mediate the initial weak interactions between leukocytes and endothelium";
+        questionAOptions[8] = "Firm adhesion of leukocytes to endothelium";
+        questionAOptions[9] = "The movement of an organism in response to a chemical stimulus";
 
         String[] questionBOptions = new String[10];
 
-        questionBOptions[0] = "Arthur";
-        questionBOptions[1] = "0";
-        questionBOptions[2] = "NetBeans";
-        questionBOptions[3] = "ChallenList";
-        questionBOptions[4] = "Integer can be cast to a String while int cannot";
-        questionBOptions[5] = "0";
-        questionBOptions[6] = "Objects require less data";
-        questionBOptions[7] = "BubbleSort";
-        questionBOptions[8] = "Setting a variable to a particular value";
-        questionBOptions[9] = "Returning a variable for a particular value";
+        questionBOptions[0] = "A collection of white blood cells in an epithelial tissue";
+        questionBOptions[1] = "The excessive accumulation of fat cells in the abdomen";
+        questionBOptions[2] = "An enzyme responsible for phosphorylating ATP";
+        questionBOptions[3] = "Signals for the transcription of rRNA";
+        questionBOptions[4] = "Inhibits platelet formation";
+        questionBOptions[5] = "Metabolite of lysine";
+        questionBOptions[6] = "Causes the lysing of red blood cells";
+        questionBOptions[7] = "Creates the myelin sheath around neurons";
+        questionBOptions[8] = "Prevents viruses from invading the blood brain barrier";
+        questionBOptions[9] = "The storage of water in connective tissue";
 
         String[] questionCOptions = new String[10];
 
-        questionCOptions[0] = "Spongebob";
-        questionCOptions[1] = "50%";
-        questionCOptions[2] = "XCode";
-        questionCOptions[3] = "IllinoisList";
-        questionCOptions[4] = "int can have methods called on it";
-        questionCOptions[5] = "64";
-        questionCOptions[6] = "Objects do not require the 'new' keyword";
-        questionCOptions[7] = "MergeSort";
-        questionCOptions[8] = "Multiplying two integers together";
-        questionCOptions[9] = "Adding two integers together";
+        questionCOptions[0] = "The attack of antibodies against self antigens";
+        questionCOptions[1] = "The generation of stem cells";
+        questionCOptions[2] = "A molecule responsible for electrostatic balance across a neuron";
+        questionCOptions[3] = "Acts as a ligand for antagonists";
+        questionCOptions[4] = "A molecule that prevents Wilson's disease";
+        questionCOptions[5] = "A molecule that is capable of self-replication";
+        questionCOptions[6] = "Inhibits the transcription of selectin genes";
+        questionCOptions[7] = "Amplifies the translation of integrin genes";
+        questionCOptions[8] = "Inhibits the translation tRNA genes";
+        questionCOptions[9] = "The formation of multiple granulomas";
 
         String[] questionDOptions = new String[10];
 
-        questionDOptions[0] = "Sofia the First";
-        questionDOptions[1] = "25%";
-        questionDOptions[2] = "Geoff Studio";
-        questionDOptions[3] = "TabList";
-        questionDOptions[4] = "Integer is a primitive type and int is not";
-        questionDOptions[5] = "16";
-        questionDOptions[6] = "Objects are the only way to build useful things";
-        questionDOptions[7] = "QuickSort";
-        questionDOptions[8] = "Searching through a graph";
-        questionDOptions[9] = "Recursively searching a tree";
+        questionDOptions[0] = "A strain of Zika virus";
+        questionDOptions[1] = "The presence of an extra thoracic vertabrae";
+        questionDOptions[2] = "A protein receptor that pumps out sodium ions";
+        questionDOptions[3] = "A deadly bacterium that attacks the uterine lining";
+        questionDOptions[4] = "A hormone responsible for female reproduction";
+        questionDOptions[5] = "A byproduct of the TCA cycle";
+        questionDOptions[6] = "Destroying glucose production";
+        questionDOptions[7] = "Influences DNA remodeling proteins";
+        questionDOptions[8] = "Prevents DNA gyrase from binding to DNA";
+        questionDOptions[9] = "The taxonomic classification of molecules";
 
         String questionLabel = randomQuestions[rng];
         String questionAPhrase = questionAOptions[rng];

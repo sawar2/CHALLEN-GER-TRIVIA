@@ -50,29 +50,29 @@ public class GamePageActivity extends MainActivity {
         int rng = getRandomNumber();
 
         String[] randomPhrases = new String[10];
-        randomPhrases[0] = "recursive";
-        randomPhrases[1] = "constructor";
-        randomPhrases[2] = "inheritance";
-        randomPhrases[3] = "polymorphism";
-        randomPhrases[4] = "arraylist";
-        randomPhrases[5] = "parameter";
-        randomPhrases[6] = "boolean";
-        randomPhrases[7] = "protected";
-        randomPhrases[8] = "variable";
-        randomPhrases[9] = "abstract";
+        randomPhrases[0] = "inflammation";
+        randomPhrases[1] = "edema";
+        randomPhrases[2] = "cytokine";
+        randomPhrases[3] = "macrophage";
+        randomPhrases[4] = "lymphocyte";
+        randomPhrases[5] = "autoimmune";
+        randomPhrases[6] = "fibrosis";
+        randomPhrases[7] = "eosinophil";
+        randomPhrases[8] = "granuloma";
+        randomPhrases[9] = "histamine";
 
         String[] hiddenPhrases = new String[10];
 
-        hiddenPhrases[0] = "_________";
-        hiddenPhrases[1] = "___________";
-        hiddenPhrases[2] = "___________";
-        hiddenPhrases[3] = "____________";
-        hiddenPhrases[4] = "_________";
-        hiddenPhrases[5] = "_________";
-        hiddenPhrases[6] = "_______";
-        hiddenPhrases[7] = "_________";
-        hiddenPhrases[8] = "________";
-        hiddenPhrases[9] = "________";
+        hiddenPhrases[0] = "____________";
+        hiddenPhrases[1] = "_____";
+        hiddenPhrases[2] = "________";
+        hiddenPhrases[3] = "__________";
+        hiddenPhrases[4] = "__________";
+        hiddenPhrases[5] = "__________";
+        hiddenPhrases[6] = "________";
+        hiddenPhrases[7] = "__________";
+        hiddenPhrases[8] = "_________";
+        hiddenPhrases[9] = "_________";
 
         String phraseLabel = hiddenPhrases[rng];
         getPhraseLabel = phraseLabel;
